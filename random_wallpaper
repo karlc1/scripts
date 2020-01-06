@@ -1,0 +1,7 @@
+#!/bin/bash
+
+RAND_IMG=`find ~/Pictures/wallpapers/Vibrant -not -path '*/\.*'| shuf -n 1`
+
+echo $RAND_IMG
+
+feh --bg-scale $RAND_IMG
