@@ -9,4 +9,7 @@ compton --vsync=opengl-swc --backend=glx --blur-background-fixed --blur-backgrou
 	xrandr --output DP-4 --mode 1920x1080 --rate 120 --primary --left-of HDMI-0 \
 	--output HDMI-0 --mode 2560x1440 --rate 60 & \
 	# feh --bg-scale ~/Scripts/res/current_wallpaper & \
-	feh --bg-scale ~/Pictures/wallpapers/Vibrant/37372d9f6b52c840f656e42aa078b6a4c2b4652db526fda317834063c4c999d3.png\
+	feh --bg-scale ~/Pictures/wallpapers/Landscapes/landscape_14.jpg & \
+	xbindkeys
+	
+
