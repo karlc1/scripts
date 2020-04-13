@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RAND_IMG=`find ~/Pictures/wallpapers/Vibrant -not -path '*/\.*'| shuf -n 1`
+RAND_IMG=`find ~/Pictures/wallpapers -not -path '*/\.*'| shuf -n 1`
 
 echo $RAND_IMG
 
