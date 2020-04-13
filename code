@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+C_PATH=/home/$USER/code/$1/;
+[ ! -d $C_PATH ] && echo "Directory $C_PATH does not exists." && exit 1;
+
+cd $C_PATH
+nvim .
