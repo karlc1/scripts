@@ -3,13 +3,16 @@
 # This scripts should run once at start up. It starts compositor with correct params, sets up xrandr for my monitor setup and extracts wallpaper responsibility from the window manager
 
 
-killall compton; # make sure compton doesn't stack
-compton --vsync=opengl-swc --backend=glx --blur-background-fixed --blur-background-frame --blur-kern=7x7box --blur-method=kawase --blur-strength=20 --unredir-if-possible --glx-use-gpushader4 --sw-opti & \
+killall compton 2> /dev/null; # make sure compton doesn't stack
+compton --vsync=opengl-swc --backend=glx --blur-background-fixed --blur-background-frame --blur-kern=7x7box --blur-method=kawase --blur-strength=1 --unredir-if-possible --glx-use-gpushader4 --sw-opti & \
 
 	xrandr --output DP-4 --mode 1920x1080 --rate 120 --primary --left-of HDMI-0 \
 	--output HDMI-0 --mode 2560x1440 --rate 60 & \
 	# feh --bg-scale ~/Scripts/res/current_wallpaper & \
-	feh --bg-scale ~/Pictures/wallpapers/Landscapes/landscape_14.jpg & \
-	xbindkeys
+	#feh --bg-scale ~/Pictures/wallpapers/Landscapes/landscape_14.jpg & \
+	feh --bg-scale ~/Pictures/forest.png & \
+	xbindkeys & \
+	~/code/cleanfullscreen/cleanfullscreen &
+
 	
 
