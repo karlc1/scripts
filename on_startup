@@ -12,7 +12,13 @@ compton --vsync=opengl-swc --backend=glx --blur-background-fixed --blur-backgrou
 	#feh --bg-scale ~/Pictures/wallpapers/Landscapes/landscape_14.jpg & \
 	feh --bg-scale ~/Pictures/forest.png & \
 	xbindkeys & \
-	~/code/cleanfullscreen/cleanfullscreen &
+	~/code/cleanfullscreen/cleanfullscreen & \
+	# for mounting stuff with thunar, requires polkit-gnome from pacman
+	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & \
+	# chaning cursor, requires xorg-xsetroot
+	xsetroot -cursor_name left_ptr &
+
+
 
 	
 
